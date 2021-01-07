@@ -14,7 +14,6 @@ flags.DEFINE_integer('input_size', 416, 'path to output')
 flags.DEFINE_string('quantize_mode', 'float32', 'quantize mode (int8, float16, float32)')
 flags.DEFINE_string('dataset', "/Volumes/Elements/data/coco_dataset/coco/5k.txt", 'path to dataset')
 flags.DEFINE_list('shape', [1, 13, 13, 30], 'shape of it')
-print(FLAGS.shape)
 
 def representative_data_gen():
   fimage = open(FLAGS.dataset).read().split()
